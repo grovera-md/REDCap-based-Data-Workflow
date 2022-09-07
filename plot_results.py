@@ -26,7 +26,7 @@ class Psa(BaseModel):
 
 db.connect()
 
-# Find subset of patients with at least 4 PSA date/value pairs in the last 6 months
+# Find subset of patients with at least 3 PSA date/value pairs in the last 6 months
 currentDate = datetime.datetime.now()
 deltaDays = 6*30
 startDate = currentDate - datetime.timedelta(days=deltaDays)
